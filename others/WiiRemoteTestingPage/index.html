@@ -1,0 +1,152 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+function round2(v) { return Math.round(v*100)/100; }
+function isHold(h, v, c) { return (h & v) ? c : ""; }
+
+function UpdateWiiRemote()
+{
+	for (i=0; i<4; i++)
+	{
+		var pad = opera.wiiremote.update(i);
+		var mes = "";
+		if (pad.isDataValid && pad.isDataValid)
+		{
+			mes += "Coordinates ";
+			if (pad.dpdScreenX == undefined || pad.dpdScreenY == undefined)
+			{
+				mes += "( --- , --- )<br>";
+			}
+			else
+			{
+				mes += "( " + pad.dpdScreenX + " , " + pad.dpdScreenY + " )<br>";
+			}
+			var hold = pad.hold;
+            var rad = Math.atan2(pad.dpdRollY, pad.dpdRollX);
+            mes += "Slant : " + round2(rad * 180 / Math.PI) + "Degree<br>";
+            mes += "Distance : " + round2(pad.dpdDistance) + "<br>";
+			mes += "Button : " +
+					isHold(hold, 1, "&larr;") +
+            		isHold(hold, 2, "&rarr;") +
+                	isHold(hold, 4, "&darr;") +
+                    isHold(hold, 8, "&uarr;") +
+                    isHold(hold, 4096, "+") +
+                    isHold(hold, 16, "+") +
+                    isHold(hold, 256, "2") +
+                    isHold(hold, 512, "1") +
+                    isHold(hold, 1024, "B") +
+                    isHold(hold, 2048, "A");
+        }
+        else
+        {
+        	mes = "Not connected";
+        }
+        document.getElementById("p"+i).innerHTML = mes;
+    }
+}
+
+function StartTimer()
+{
+	if (window.opera && window.opera.wiiremote)
+	{
+		setInterval('UpdateWiiRemote()', 100);
+	}
+	else
+	{
+		document.getElementById("message").innerHTML = "This sample runs correctly only when viewed on the Internet Channel.";
+	}
+}
+</script>
+<style type="text/css">
+.linecolor {
+	background-color: #999999;
+}
+.spec_1 {
+	padding: 6px 10px 6px;
+	font-size: 12px;
+	line-height: 1.3;
+	color: #555555;
+	background-color: #F0FBFF;
+	white-space: nowrap;
+}
+.spec_2 {
+	padding: 6px 10px 6px;
+	font-size: 12px;
+	line-height: 1.3;
+	color: #555555;
+	background-color: #FFFFFF;
+	white-space: nowrap;
+}
+a{
+	color: #63697b;
+}
+a:hover{
+	color:#00c1ed;
+	text-decoration:underline;
+}
+</style>
+<link rel="stylesheet" href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwPSJhLWJldHRlci1icm93c2VyIl0gewogIGRpc3BsYXk6IGJsb2NrOwogIGJhY2tncm91bmQ6ICM0NTQ4NGQ7CiAgY29sb3I6ICNmZmY7CiAgbGluZS1oZWlnaHQ6IDEuNDU7CiAgcG9zaXRpb246IGZpeGVkOwogIHotaW5kZXg6IDkwMDAwMDAwOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIHBhZGRpbmc6IC41ZW0gMWVtOwogIHRleHQtYWxpZ246IGNlbnRlcjsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImEtYmV0dGVyLWJyb3dzZXIiXVtkYXRhLXZpc2liaWxpdHk9ImhpZGRlbiJdIHsKICBkaXNwbGF5OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1tZXNzYWdlIHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJhLWJldHRlci1icm93c2VyIl0gYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7CiAgY29sb3I6ICNlYmViZjQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6aG92ZXIsCmNsb3VkZmxhcmUtYXBwW2FwcD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6YWN0aXZlIHsKICBjb2xvcjogI2RiZGJlYjsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwPSJhLWJldHRlci1icm93c2VyIl0gY2xvdWRmbGFyZS1hcHAtY2xvc2UgewogIGRpc3BsYXk6IGJsb2NrOwogIGN1cnNvcjogcG9pbnRlcjsKICBmb250LXNpemU6IDEuNWVtOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICByaWdodDogLjRlbTsKICB0b3A6IC4zNWVtOwogIGhlaWdodDogMWVtOwogIHdpZHRoOiAxZW07CiAgbGluZS1oZWlnaHQ6IDE7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcD0iYS1iZXR0ZXItYnJvd3NlciJdIGNsb3VkZmxhcmUtYXBwLWNsb3NlOmFjdGl2ZSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpOwp9CgpjbG91ZGZsYXJlLWFwcFthcHA9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1jbG9zZTpob3ZlciB7CiAgb3BhY2l0eTogLjllbTsKICBjb2xvcjogI2ZmZjsKfQo="></head>
+<body onload="StartTimer();" class="" data-cf-browser-state="modern" data-cf-browser-version="90" data-cf-browser-name="chrome">
+<h1 class="center">Sample Page Using the Advanced Features of the Internet Channel</h1>
+<div align="center">
+<div style="width:525px; text-align:left; padding:35px 0 0;">
+This is a sample page that obtains and displays the Wii remote status every 0.1 seconds.<br>
+<span class="actually-red"><span id="message">This sample runs correctly only when viewed on the Internet Channel.</span></span><br>
+<br>
+<table cellpadding="0" cellspacing="0" border="0" width="525">
+<tbody><tr>
+<td width="525" class="linecolor">
+<table width="100%" border="0" cellspacing="1" cellpading="2">
+<tbody><tr>
+<th class="spec_1">1P</th><th class="spec_1">2P</th>
+</tr>
+<tr>
+<td id="p0" style="background-color: #CCCCFF;" width="25%" class="spec_2">----</td>
+<td id="p1" style="background-color: #FFCCCC;" width="25%" class="spec_2">----</td>
+</tr>
+<tr>
+<th class="spec_1">3P</th><th class="spec_1">4P</th>
+</tr>
+<tr>
+<td id="p2" style="background-color: #CCFFCC;" width="25%" class="spec_2">----</td>
+<td id="p3" style="background-color: #FFFFCC;" width="25%" class="spec_2">----</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="global_footer">
+(Disclaimer)
+<ul>
+<li>
+This company will give absolutely no legal guarantee regarding this expanded function, including ownership of fixed marketability, ownership of compatibility for specific purpose, no damage to 3rd party intellectual property (patent, copyright, trademark, etc).
+</li>
+<li>
+This company will take absolutely no responsibility for any kind of damages sustained due to use of this expanded function.
+</li>
+<li>
+This company does not grant any kind of rights for parties using this expanded function.
+</li>
+<li>
+This company will provide no support whatsoever for this expanded function.
+</li>
+</ul>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td valign="top"><div class="copyright_text_footer">© 2007 Nintendo. ™, ® &amp; the Wii logo are trademarks of Nintendo. Demonstration page preserved by RiiConnect24 and reuploaded here. Games are property of their respective owners.</div><table width="913" border="0" align="center" cellpadding="0" cellspacing="0">
+<tbody><tr>
+
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+</div></body></html>

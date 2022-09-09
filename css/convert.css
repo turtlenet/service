@@ -1,0 +1,12 @@
+body {
+	background-color: #BA00FF;
+    color: white;
+    background-image:url('../img/gradient.png');
+    background-position: top;
+    background-repeat: no-repeat;
+	margin: 0px;
+	padding: 10px;
+}
+a {
+    color: white;
+}

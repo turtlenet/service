@@ -1,0 +1,10 @@
+body {
+	background-color: #B40AFD;
+	color: white;
+	background-image:url('../img/bannersmol.png');
+	background-position: top;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+a { font-weight:bold;text-decoration:none;color:white; }

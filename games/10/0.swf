@@ -1,0 +1,99 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script src="https://archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app57.us.archive.org';v.server_ms=307;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="https://web.archive.org/static/js/ait-client-rewrite.js?v=1549496156" charset="utf-8"></script>
+<script type="text/javascript">
+WB_wombat_Init('https://web.archive.org/web', '20130807214629', '2008.pumkin.com');
+</script>
+<script type="text/javascript" src="https://web.archive.org/static/js/wbhack.js?v=1549496156" charset="utf-8"></script>
+<script type="text/javascript">
+__wbhack.init('https://web.archive.org/web');
+</script>
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/static/css/banner-styles.css?v=1549496156" />
+<link rel="stylesheet" type="text/css" href="https://web.archive.org/static/css/iconochive.css?v=1549496156" />
+<!-- End Wayback Rewrite JS Include -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<link href="https://web.archive.org/web/20130807214629cs_/http://2008.pumkin.com/styles/pum01.css" rel="stylesheet" type="text/css"/>
+<title>Pumkin - Digital English Education</title>
+</head>
+
+<body>
+<div id="site-container">
+<h1><a href="0.swf" title="Pumkin - Digital English Education">Pumkin - Digital English Education</a></h1>
+
+<ul id="main-menu">
+	<li id="bt-pumkinland"><a href="0.swf" class="current">Pumkinland</a></li>
+
+	<ul id="sub-menu"><li><a href="https://web.archive.org/web/20130807214629/http://2008.pumkin.com/index.php" class="current">Games</a></li><li><a href="https://web.archive.org/web/20130807214629/http://2008.pumkin.com/cartoonmenu.php">Cartoons</a></li></ul>		
+	</li>
+</ul>
+
+<div id="content">
+
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://web.archive.org/web/20130807214629oe_/http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="727" height="533" id="menu" align="middle">
+<param name="allowScriptAccess" value="sameDomain"/>
+<param name="movie" value="menus/gamesmenuplayer.swf?menuname=menus/gamesmenu.swf"/>
+<param name="quality" value="high"/>
+<param name="scale" value="exactfit"/>
+<param name="wmode" value="transparent"/>
+<param name="bgcolor" value="#ffffff"/>
+<embed src="https://web.archive.org/web/20130807214629oe_/http://2008.pumkin.com/menus/gamesmenuplayer.swf?menuname=menus/gamesmenu.swf" quality="high" scale="exactfit" wmode="transparent" bgcolor="#ffffff" width="727" height="533" name="menu" align="middle" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>
+</object>
+
+
+</div>
+
+<div id="footer">
+	<div id="footer-links" class="clearfix">
+    <!--
+	<a id="bt-corporate" href="about/corporate.php"></a>
+	<a id="bt-invest" href="invest/"></a>	
+	<a id="bt-contact" href="mailto:pumkin.com@gmail.com"></a></div>
+	<p id="pumdemoBanner">
+    <a href="http://pumkin.educities.edu.tw/"><img src="images/pumdemo.gif" /></a></p>
+    -->
+    <p id="copyright">&copy; 2007 Pumkin Productions. All rights reserved.</p>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-5370934-14']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://web.archive.org/web/20130807214629/https://ssl/' : 'https://web.archive.org/web/20130807214629/http://www/') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</div>
+
+
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:46:29 Aug 07, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:11:31 Mar 06, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 34.267 (3)
+  esindex: 0.01
+  captures_list: 59.122
+  CDXLines.iter: 9.378 (3)
+  PetaboxLoader3.datanode: 45.552 (4)
+  exclusion.robots: 0.264
+  exclusion.robots.policy: 0.248
+  RedisCDXSource: 12.985
+  PetaboxLoader3.resolve: 213.559
+  load_resource: 241.627
+-->

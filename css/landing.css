@@ -1,0 +1,32 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+html {
+    background-color: rgb(180, 10, 253);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+}
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.main-card {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 1000px;
+    padding: 30px;
+}
+.main-card-content {
+    font-size: 24px;
+}
+.socials {
+    padding-top: 100px;
+    text-align: center; 
+    font-size: 42px;
+}

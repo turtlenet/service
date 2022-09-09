@@ -1,0 +1,15 @@
+body {
+    background-color: #BA00FF;
+    color: white;
+    background-image:url('../img/utilities/UtilsHeader.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+a {
+    color: white;
+    text-decoration:none;
+    font-weight:bold;
+}
+table {
+    margin: auto;
+}

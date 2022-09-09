@@ -1,0 +1,17 @@
+body  {
+	background-color: #BA00FF;
+	color: white; 
+	background-image:url('../img/games/GamesHeader.png');
+	background-position: top;
+	background-repeat: no-repeat;
+}
+button {
+	background-color: #BA00FF;
+	color: white;
+	font-size: 24px;
+}
+a {
+	color: white;
+	text-decoration: none;
+    	font-weight: bold;
+}
