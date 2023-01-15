@@ -27,3 +27,14 @@ Right now, WiiNet contains 5 main features.
    - Links to other websites that are designed to work on the Wii
 
 That is all for now, stay tuned for more updates on the project by joining the [Discord](https://discord.gg/PBuAbQbrXJ)
+
+
+### Dependencies
+This is an incomplete, flawed list that will hopefully get more acccurate and helpful with time.
+
+We currently use:
+- apache2
+- php8.1
+- php8.1-curl
+- ffmpeg
+- yt-dlp

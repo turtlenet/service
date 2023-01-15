@@ -8,11 +8,11 @@
 	$session = rand(1,99);
 	exec('rm '.$session.'.flv');
 	exec('pkill -f ffmpeg');
-	exec('pkill -f youtube-dl');
+	exec('pkill -f yt-dlp');
 	exec('rm movie.*');
 	exec('rm *.part');
 	$search = $_GET["id"];
-	$progress = shell_exec('youtube-dl --force-ipv4 -q -o "movie.%(ext)s" --exec "ffmpeg -i {} -ar 22050 -f flv -s 320x240 -ab 32 -threads 4 -filter:v fps=fps=15 -ss 00:00:00 -to 00:05:00 '.$session.'.flv" '.$search.'');
+	$progress = shell_exec('yt-dlp --force-ipv4 -q -o "movie.%(ext)s" --exec "ffmpeg -i {} -ar 22050 -f flv -s 320x240 -ab 32 -threads 4 -filter:v fps=fps=15 -ss 00:00:00 -to 00:05:00 '.$session.'.flv" '.$search.'');
 	echo "<div style='text-align:center;'><object type='application/x-shockwave-flash' data='player.swf' width='384' height='256' id='flvplayer' style='visibility: visible;'>";
 	echo "<param name='id' value='flvplayer'>";
 	echo "<param name='wmode' value='transparent'>";
