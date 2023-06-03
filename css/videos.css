@@ -19,3 +19,6 @@ table {
 div.videotitle {
 	text-align:center;
 }
+div.videoauthor {
+    font-size: 10px;
+}
